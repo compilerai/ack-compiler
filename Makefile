@@ -18,7 +18,7 @@ ACK_TEMP_DIR ?= /tmp
 ifeq ($(OS),Windows_NT)
 PREFIX ?= c:/ack
 else
-PREFIX ?= $(HOME)/ack-install
+PREFIX ?= $(abspath ../ack-compiler-install)
 #PREFIX ?= /usr/local
 #PREFIX = $(INSDIR)
 endif
